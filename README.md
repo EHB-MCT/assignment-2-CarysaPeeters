@@ -96,5 +96,11 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
 - [Conventions](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript)
 - [Conventions](https://standardjs.com/rules.html)
 - [Conventions](https://pimcore.com/docs/platform/Portal_Engine/Development_Documentation/Customize_Appearance/Frontend_Architecture/)
-- [Conventions] (https://medium.com/@noriller/docs-conventional-commits-feat-fix-refactor-which-is-which-531614fcb65a)
+- [Conventions](https://medium.com/@noriller/docs-conventional-commits-feat-fix-refactor-which-is-which-531614fcb65a)
+- [HTML](https://www.w3schools.com/tags/tag_select.asp)
+- [HTML](https://www.w3schools.com/tags/att_input_type_datetime-local.asp)
+- [HTML](https://www.w3schools.com/tags/tag_input.asp)
+- [HTML](https://www.w3schools.com/tags/att_input_type_number.asp)
+- [HTML](https://codepen.io/chamsi/pen/LavooJ)
+- [HTML](https://www.nutribites.nl/artikel/vitamine-voor-vegetariers/#:~:text=Vegetarisch%20eten%20kan%20lekker%20en,geen%20vlees%20eet%20%5B1%5D.)
 - [Chatgpt.com](https://chatgpt.com/share/6741a7fa-1f38-8010-a0ba-f386f460149f) used for the file structure
