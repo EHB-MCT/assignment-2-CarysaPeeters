@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Voedingswaarden</title>
+	</head>
+	<body>
+		<form action="/action_page.php">
+			<label for="maaltijdtype">Maaltijdtype:</label>
+			<select name="maaltijdtype" id="maaltijdtype">
+				<option value="ontbijt">Ontbijt</option>
+				<option value="lunch">Lunch</option>
+				<option value="avondeten">Avondeten</option>
+				<option value="tussendoortje">Tussendoortje</option>
+				<option value="drank">Drank</option></select
+			><br /><br />
+
+			<label for="datumTijd">Datum en uur van consumptie</label>
+			<input type="datetime-local" id="datumTijd" name="datumTijd" /><br /><br />
+
+			<label for="gerecht">Gerecht:</label>
+			<input type="text" id="gerecht" name="gerecht" /><br /><br />
+
+			<label for="ingrediënten">Ingrediënten:</label>
+			<input type="text" id="ingrediënten" name="ingrediënten" /><br /><br />
+
+			<label for="hoeveelheidCalorieën">Hoeveelheid calorieën:</label>
+			<input type="number" id="hoeveelheidCalorieën" name="hoeveelheidCalorieën" min="0" max="3000" />
+			<span class="hoeveelheidCalorieënSuffix">kcal</span><br /><br />
+
+			<label for="hoeveelheidEiwitten">Hoeveelheid eiwitten:</label>
+			<input type="number" id="hoeveelheidEiwitten" name="hoeveelheidEiwitten" min="0" max="3000" />
+			<span class="hoeveelheidEiwittenSuffix">g</span><br /><br />
+
+			<label for="hoeveelheidProteïne">Hoeveelheid proteïne:</label>
+			<input type="number" id="hoeveelheidProteïne" name="hoeveelheidProteïne" min="0" max="3000" />
+			<span class="hoeveelheidProteïneSuffix">g</span><br /><br />
+
+			<label for="hoeveelheidKoolhydraten">Hoeveelheid koolhydraten:</label>
+			<input type="number" id="hoeveelheidKoolhydraten" name="hoeveelheidKoolhydraten" min="0" max="3000" />
+			<span class="hoeveelheidKoolhydratenSuffix">g</span><br /><br />
+
+			<label for="hoeveelheidVetten">Hoeveelheid vetten:</label>
+			<input type="number" id="hoeveelheidVetten" name="hoeveelheidVetten" min="0" max="3000" />
+			<span class="hoeveelheidVettenSuffix">g</span><br /><br />
+
+			<label for="hoeveelheidVezels">Hoeveelheid vezels:</label>
+			<input type="number" id="hoeveelheidVezels" name="hoeveelheidVezels" min="0" max="3000" />
+			<span class="hoeveelheidVezelsSuffix">g</span><br /><br />
+
+			<label for="hoeveelheidIjzer">Hoeveelheid ijzer:</label>
+			<input type="number" id="hoeveelheidIjzer" name="hoeveelheidIjzer" min="0" max="3000" />
+			<span class="hoeveelheidIjzerSuffix">mg</span><br /><br />
+
+			<label for="hoeveelheidZink">Hoeveelheid zink:</label>
+			<input type="number" id="hoeveelheidZink" name="hoeveelheidZink" min="0" max="3000" />
+			<span class="hoeveelheidZinkSuffix">mg</span><br /><br />
+
+			<label for="hoeveelheidCalcium">Hoeveelheid calcium:</label>
+			<input type="number" id="hoeveelheidCalcium" name="hoeveelheidCalcium" min="0" max="3000" />
+			<span class="hoeveelheidCalciumSuffix">mg</span><br /><br />
+
+			<label for="hoeveelheidB12">Hoeveelheid B12:</label>
+			<input type="number" id="hoeveelheidB12" name="hoeveelheidB12" min="0" max="3000" />
+			<span class="hoeveelheidB12Suffix">mcg</span><br /><br />
+
+			<label for="hoeveelheidD3">Hoeveelheid D3:</label>
+			<input type="number" id="hoeveelheidD3" name="hoeveelheidD3" min="0" max="3000" />
+			<span class="hoeveelheidD3Suffix">mcg</span><br /><br />
+
+			<label for="hoeveelheidOmega3">Hoeveelheid Omega 3:</label>
+			<input type="number" id="hoeveelheidOmega3" name="hoeveelheidOmega3" min="0" max="3000" />
+			<span class="hoeveelheidOmega3Suffix">g</span><br /><br />
+
+			<input type="submit" value="Submit" />
+		</form>
+	</body>
+</html>
