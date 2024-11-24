@@ -4,9 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Voedingswaarden</title>
+		<script type="module" src="/scripts/js/supabaseClient.js" defer ></script>
+		<script type="module" src="/scripts/js/formValidation.js" defer></script>
 	</head>
 	<body>
-		<form action="/action_page.php">
+		<form id="voedingswaardenForm">
 			<label for="maaltijdtype">Maaltijdtype:</label>
 			<select name="maaltijdtype" id="maaltijdtype">
 				<option value="ontbijt">Ontbijt</option>
@@ -32,10 +34,6 @@
 			<label for="hoeveelheidEiwitten">Hoeveelheid eiwitten:</label>
 			<input type="number" id="hoeveelheidEiwitten" name="hoeveelheidEiwitten" min="0" max="3000" />
 			<span class="hoeveelheidEiwittenSuffix">g</span><br /><br />
-
-			<label for="hoeveelheidProteïne">Hoeveelheid proteïne:</label>
-			<input type="number" id="hoeveelheidProteïne" name="hoeveelheidProteïne" min="0" max="3000" />
-			<span class="hoeveelheidProteïneSuffix">g</span><br /><br />
 
 			<label for="hoeveelheidKoolhydraten">Hoeveelheid koolhydraten:</label>
 			<input type="number" id="hoeveelheidKoolhydraten" name="hoeveelheidKoolhydraten" min="0" max="3000" />
