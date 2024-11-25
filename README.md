@@ -14,7 +14,7 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
   Source: (https://google.github.io/styleguide/jsguide.html), (https://www.w3schools.com/js/js_conventions.asp)
 
 - Placing
-  Constants: top of the file
+  Constants: top of the file (except when there is an import, the the import needs to be first)
   Source: (https://www.w3schools.com/js/js_conventions.asp)
 
 - Formatting
@@ -33,7 +33,7 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
   Use 'prettier' to keep the style consistent. Use it for correct indentation, whitespace, and line lengths
   Source: (https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript)
 
-  Use single quotes for strings except to avoid escaping
+  Use single quotes for strings except to avoid escaping (if 'prettier' changes this automatticaly to double quotes, leave it)
   ```
   console.log('helloWorld');
   ```
