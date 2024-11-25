@@ -8,7 +8,7 @@ import { supabase } from "./supabaseClient.js";
 
 const form = document.getElementById("voedingswaardenForm");
 
-form.addEventListener("submit", async (e) => {
+form.addEventListener("submit", async function (e) {
 	e.preventDefault();
 
 	const formData = new FormData(form);
