@@ -1,3 +1,7 @@
+// The Supabase client is being imported, the form element is being retrieved from the DOM
+// The form data is being collected and stored in an object 'voedingsData', then the data is being inserted into the Supabase database
+// An error is being shown when the insertion fails
+
 "use strict";
 
 import { supabase } from "./supabaseClient.js";

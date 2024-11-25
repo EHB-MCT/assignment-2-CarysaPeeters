@@ -65,7 +65,7 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
 ## Files breakdown
 
 - Assets
-  Make sure you put your file in the right location, for example: don't put a jpeg in the 'videos' folder
+  Make sure you put your file in the right location, for example: don't put a mp4 in the 'images' folder
   If a folder starts containing more than 20 items, create subfolders based on the page you are using it for
   Source: (https://pimcore.com/docs/platform/Portal_Engine/Development_Documentation/Customize_Appearance/Frontend_Architecture/)
 
@@ -77,15 +77,25 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
   Source: (https://stackoverflow.com/questions/2336302/single-huge-css-file-vs-multiple-smaller-specific-css-files)
 
 - Scripts
-  classes:
-  js:
-    supabaseClient.js: provides the connection to Supabase and is the basis of your data interactions
-    formValidation.js: a script to pre-validate the form before saving data
-    index.js: the main script to implement the form functionality and send data to Supabase
+  supabaseClient.js: handles the initialization and configuration of the connection to Supabase
+  formValidation.js: manages form submission and data validation, it processes user input, converts it into a structured format and interacts with Supabase to store the data
 
 ## Data flow
 
+- Data entry 
+  Users fill out the form in index.html with information about a meal
+  After clicking the submit button, the data of the form is being collected and procesed by formValidation.js
+- Data validation and preparation
+  In formValidation.js the data is being extracted by using the FormData API, then the data is structured into a 'voedingsData' object
+- Data storage
+  The structured 'voedingsData' object is inserted into the 'Voedingswaarden' table in the Supabase database
+  The Supabase client in supabaseClient.js is being used to handle the insertion
+
 ## Data Attribution
+
+This project uses [Supabase](https://supabase.com/) to store and manage nutritional data entered through the application. Supabase provides a backend-as-a-service platform built on PostgreSQL, enabling fast and secure data management for web applications.
+All data stored in the application is user-generated and managed through Supabase's database services. For more information on Supabase's features, terms of use and licensing, please visit their [website](https://supabase.com/terms). 
+Source: (https://chatgpt.com/share/6744dcc4-4c44-8010-84f6-85e65cafef60)
 
 ## Sources
 
@@ -105,3 +115,5 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
 - [HTML](https://www.nutribites.nl/artikel/vitamine-voor-vegetariers/#:~:text=Vegetarisch%20eten%20kan%20lekker%20en,geen%20vlees%20eet%20%5B1%5D.)
 - [Chatgpt.com](https://chatgpt.com/share/6741a7fa-1f38-8010-a0ba-f386f460149f) used for the file structure and information about nutritional food
 - [Chatgpt.com](https://chatgpt.com/share/6743175e-713c-8010-8a5b-bdff87f0bfce) used for making the connection between the frontend and the database
+- [Chatgpt.com](https://chatgpt.com/share/6744c548-3ee0-8010-9704-3938b6790304) used for the css
+- [Chatgpt.com](https://chatgpt.com/share/6744dcc4-4c44-8010-84f6-85e65cafef60) used for the Data Attribution in the README

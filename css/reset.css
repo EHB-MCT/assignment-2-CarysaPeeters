@@ -1,3 +1,5 @@
+/* removes all css defaulted by browser */
+
 * {
     margin: 0;
     padding: 0;
