@@ -103,4 +103,5 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
 - [HTML](https://www.w3schools.com/tags/att_input_type_number.asp)
 - [HTML](https://codepen.io/chamsi/pen/LavooJ)
 - [HTML](https://www.nutribites.nl/artikel/vitamine-voor-vegetariers/#:~:text=Vegetarisch%20eten%20kan%20lekker%20en,geen%20vlees%20eet%20%5B1%5D.)
-- [Chatgpt.com](https://chatgpt.com/share/6741a7fa-1f38-8010-a0ba-f386f460149f) used for the file structure
+- [Chatgpt.com](https://chatgpt.com/share/6741a7fa-1f38-8010-a0ba-f386f460149f) used for the file structure and information about nutritional food
+- [Chatgpt.com](https://chatgpt.com/share/6743175e-713c-8010-8a5b-bdff87f0bfce) used for making the connection between the frontend and the database
