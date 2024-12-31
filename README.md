@@ -79,6 +79,13 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
 - Scripts
   supabaseClient.js: handles the initialization and configuration of the connection to Supabase
   formValidation.js: manages form submission and data validation, it processes user input, converts it into a structured format and interacts with Supabase to store the data
+  retrieveData.js: fetches nutritional data from the Supabase database (from the "Voedingswaarden" table)
+
+- Pages
+  dataVisualisation.html: this page is used for visualizing the nutritional data fetched from Supabase, the data is retrieved using retrieveData.js
+
+- index.html
+  this page contains the form where users fill in the information about a meal 
 
 ## Data flow
 
@@ -90,6 +97,8 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
 - Data storage
   The structured 'voedingsData' object is inserted into the 'Voedingswaarden' table in the Supabase database
   The Supabase client in supabaseClient.js is being used to handle the insertion
+- Data retrieval
+  The retrieveData.js script fetches the data from the 'Voedingswaarden' table in the Supabase database, the data is logged to the console 
 
 ## Data Attribution
 
@@ -117,3 +126,4 @@ Source: (https://chatgpt.com/share/6744dcc4-4c44-8010-84f6-85e65cafef60)
 - [Chatgpt.com](https://chatgpt.com/share/6743175e-713c-8010-8a5b-bdff87f0bfce) used for making the connection between the frontend and the database
 - [Chatgpt.com](https://chatgpt.com/share/6744c548-3ee0-8010-9704-3938b6790304) used for the css
 - [Chatgpt.com](https://chatgpt.com/share/6744dcc4-4c44-8010-84f6-85e65cafef60) used for the Data Attribution in the README
+- [Chatgpt.com](https://chatgpt.com/share/6773d756-89dc-8010-bd9f-96c05c52380d) used for the data retrieval in retrieveData.js
