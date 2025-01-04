@@ -141,3 +141,4 @@ Source: (https://chatgpt.com/share/6744dcc4-4c44-8010-84f6-85e65cafef60)
 - [Chatgpt.com](https://chatgpt.com/share/67794a38-ad10-8010-9356-d5f467ac5e41) used for making the total of calories/day in dataVisualisation.js
 - [Chatgpt.com](https://chatgpt.com/share/67795480-9040-8010-9ac0-abf4420e0f85) used for making the 'Totaal voedingsstoffen' pie chart
 - [Chatgpt.com](https://chatgpt.com/share/67797d6c-f1d4-8010-8aac-91d2eb430d17) used for the recommended daily nutrition intake for the line chart
+- [Chatgpt.com](https://chatgpt.com/share/67799d6a-bb18-8010-997a-02d48fbaf769) used for the 'calculateAverageNutritions' function in dataVisualisation.js
