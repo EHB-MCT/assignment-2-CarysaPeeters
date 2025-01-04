@@ -19,9 +19,9 @@ async function caloriesPerDay() {
 
 	const dailyCalories = {};
 
-    // There is an iteration over each row
+	// There is an iteration over each row
 	data.forEach(function (row) {
-        // The datumTijd property is being converted into a Date object
+		// The datumTijd property is being converted into a Date object
 		const date = new Date(row.datumTijd);
 		const formattedDate = date.toLocaleDateString();
 
@@ -29,7 +29,7 @@ async function caloriesPerDay() {
 			dailyCalories[formattedDate] = 0;
 		}
 
-        // The total amount of calories is being calculated for each day
+		// The total amount of calories is being calculated for each day
 		dailyCalories[formattedDate] += row.calorieën;
 	});
 
@@ -49,7 +49,7 @@ async function totalNutritions() {
 		return;
 	}
 
-    // These are variables to store the total amounts of the nutrients
+	// These are variables to store the total amounts of the nutrients
 	let totaalEiwitten = 0;
 	let totaalKoolhydraten = 0;
 	let totaalVetten = 0;
@@ -61,7 +61,7 @@ async function totalNutritions() {
 	let totaalD3 = 0;
 	let totaalOmega3 = 0;
 
-    // There is an iteration over each row and the calculations for the total of each nutrient are being made
+	// There is an iteration over each row and the calculations for the total of each nutrient are being made
 	data.forEach(function (row) {
 		totaalEiwitten += row.proteïne;
 		totaalKoolhydraten += row.koolhydraten;
@@ -128,5 +128,37 @@ function generatePieChart(labels, data) {
 	});
 }
 
+function generateLineChart() {
+	const ctx = document.getElementById("myLineChart");
+
+	new Chart(ctx, {
+		type: "line",
+		data: {
+			labels: ["Calorieën (kcal)", "Eiwitten (g)", "Koolhydraten (g)", "Vetten (g)", "Vezels (g)", "IJzer (mg)", "Zink (mg)", "Calcium (mg)", "Vitamine B12 (µg)", "Vitamine D3 (µg)", "Omega-3 (g)"],
+			datasets: [
+				{
+					label: "Aanbevolen dagelijkse inname",
+					data: [2076, 103, 286, 58, 30, 15, 7, 1000, 2, 15, 1],
+					borderWidth: 1,
+				},
+			],
+		},
+		options: {
+			scales: {
+				y: {
+					beginAtZero: true,
+				},
+			},
+			plugins: {
+				tooltip: {
+					mode: "index",
+					intersect: false,
+				},
+			},
+		},
+	});
+}
+
 caloriesPerDay();
 totalNutritions();
+generateLineChart();
