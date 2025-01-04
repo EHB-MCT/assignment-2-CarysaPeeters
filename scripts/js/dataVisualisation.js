@@ -5,7 +5,7 @@ import { fetchData } from "./retrieveData.js";
 const labels = [];
 const calorieData = [];
 
-async function processDataForChart() {
+async function caloriesPerDay() {
 	const data = await fetchData();
 	if (!data) {
 		console.error("No data found");
@@ -58,4 +58,4 @@ function generateCaloriesChart(labels, calorieData) {
 	});
 }
 
-processDataForChart();
+caloriesPerDay();

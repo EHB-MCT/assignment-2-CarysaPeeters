@@ -7,7 +7,7 @@
 import { supabase } from "./supabaseClient.js";
 
 export async function fetchData() {
-	const { data, error } = await supabase.from("Voedingswaarden").select("datumTijd, calorieën");
+	const { data, error } = await supabase.from("Voedingswaarden").select("*");
 
 	if (error) {
 		console.error("Error fetching data:", error);
