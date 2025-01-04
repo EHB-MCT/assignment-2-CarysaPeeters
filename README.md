@@ -21,6 +21,7 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
   Before and after a + , - , = , => , < , > a space
 
   Functions, foreach, and other things that use curly brackets are formatted like this:
+
   ```
   fun() {
 
@@ -34,6 +35,7 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
   Source: (https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript)
 
   Use single quotes for strings except to avoid escaping (if 'prettier' changes this automatticaly to double quotes, leave it)
+
   ```
   console.log('helloWorld');
   ```
@@ -42,12 +44,15 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
   $("<div class='box'>")
   console.log(`hello ${name}`)
   ```
+
   Source: (https://standardjs.com/rules.html)
 
 - Arrays
+
   ```
   const filteredPaintings = [];
   ```
+
   Source: (https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript)
 
 - Comments
@@ -59,7 +64,7 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
   Source: (https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript)
 
 - Commits
-  formatted in the conventional method 
+  formatted in the conventional method
   Source: (https://www.conventionalcommits.org/en/v1.0.0/), (https://medium.com/@noriller/docs-conventional-commits-feat-fix-refactor-which-is-which-531614fcb65a)
 
 ## Files breakdown
@@ -80,16 +85,17 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
   supabaseClient.js: handles the initialization and configuration of the connection to Supabase
   formValidation.js: manages form submission and data validation, it processes user input, converts it into a structured format and interacts with Supabase to store the data
   retrieveData.js: fetches nutritional data from the Supabase database (from the "Voedingswaarden" table)
+  dataVisualisation.js: visualises the nutritional data in charts, it fetches the data from retrieveData.js and generates a chart using [Chart.js](https://www.chartjs.org/docs/latest/getting-started/)
 
 - Pages
   dataVisualisation.html: this page is used for visualizing the nutritional data fetched from Supabase, the data is retrieved using retrieveData.js
 
 - index.html
-  this page contains the form where users fill in the information about a meal 
+  this page contains the form where users fill in the information about a meal
 
 ## Data flow
 
-- Data entry 
+- Data entry
   Users fill out the form in index.html with information about a meal
   After clicking the submit button, the data of the form is being collected and procesed by formValidation.js
 - Data validation and preparation
@@ -98,19 +104,21 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
   The structured 'voedingsData' object is inserted into the 'Voedingswaarden' table in the Supabase database
   The Supabase client in supabaseClient.js is being used to handle the insertion
 - Data retrieval
-  The retrieveData.js script fetches the data from the 'Voedingswaarden' table in the Supabase database, the data is logged to the console 
+  The retrieveData.js script fetches the data from the 'Voedingswaarden' table in the Supabase database, the data is logged to the console
+- Data visualisation
+  The data that's been fetched in retrieveData.js is being used to create clear charts with [Chart.js](https://www.chartjs.org/docs/latest/getting-started/) in dataVisualisation.js, these charts are being rendered in dataVisualisation.html
 
-## Data Attribution
+## Data attribution
 
 This project uses [Supabase](https://supabase.com/) to store and manage nutritional data entered through the application. Supabase provides a backend-as-a-service platform built on PostgreSQL, enabling fast and secure data management for web applications.
-All data stored in the application is user-generated and managed through Supabase's database services. For more information on Supabase's features, terms of use and licensing, please visit their [website](https://supabase.com/terms). 
+All data stored in the application is user-generated and managed through Supabase's database services. For more information on Supabase's features, terms of use and licensing, please visit their [website](https://supabase.com/terms).
 Source: (https://chatgpt.com/share/6744dcc4-4c44-8010-84f6-85e65cafef60)
 
 ## Sources
 
 - [Conventions](https://www.w3schools.com/js/js_conventions.asp)
-- [Conventions](https://google.github.io/styleguide/jsguide.html) 
-- [Conventions](https://www.conventionalcommits.org/en/v1.0.0/) 
+- [Conventions](https://google.github.io/styleguide/jsguide.html)
+- [Conventions](https://www.conventionalcommits.org/en/v1.0.0/)
 - [Conventions](https://stackoverflow.com/questions/2336302/single-huge-css-file-vs-multiple-smaller-specific-css-files)
 - [Conventions](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript)
 - [Conventions](https://standardjs.com/rules.html)
