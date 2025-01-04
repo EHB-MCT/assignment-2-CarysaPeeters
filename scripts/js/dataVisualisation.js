@@ -82,6 +82,7 @@ async function totalNutritions() {
 	generatePieChart(nutrientLabels, nutrientData);
 }
 
+// This function is being used to calculate the average daily amounts of the nutrients
 async function calculateAverageNutritions() {
 	const data = await fetchData();
 	if (!data) {
@@ -89,6 +90,7 @@ async function calculateAverageNutritions() {
 		return;
 	}
 
+	// Object to store the total nutrients for each day
 	const dailyNutritions = {
 		calorieën: [],
 		eiwitten: [],
@@ -103,6 +105,7 @@ async function calculateAverageNutritions() {
 		omega3: [],
 	};
 
+	// There is an iteration over each row and the calculations for the total of each nutrition for each day are being made 
 	data.forEach(function (row) {
 		const date = new Date(row.datumTijd);
 		const formattedDate = date.toLocaleDateString(); 
@@ -134,6 +137,7 @@ async function calculateAverageNutritions() {
 		dailyNutritions.omega3[formattedDate] += row.omega3;
 	});
 
+	// Object to store the average amounts of the nutrients
 	const averageNutritions = {
 		calorieën: 0,
 		eiwitten: 0,
@@ -150,9 +154,11 @@ async function calculateAverageNutritions() {
 
 	let totalDays = 0;
 
+	// Calculating the average for all the nutrients for each day
 	for (const date in dailyNutritions.calorieën) {
 		const dailyData = dailyNutritions;
 
+		// Making a total of all the days for each nutrient 
 		averageNutritions.calorieën += dailyData.calorieën[date];
 		averageNutritions.eiwitten += dailyData.eiwitten[date];
 		averageNutritions.koolhydraten += dailyData.koolhydraten[date];
@@ -168,6 +174,7 @@ async function calculateAverageNutritions() {
 		totalDays++;
 	}
 
+	// Calculating the average for each nutrient
 	for (const nutrient in averageNutritions) {
 		averageNutritions[nutrient] /= totalDays;
 	}
