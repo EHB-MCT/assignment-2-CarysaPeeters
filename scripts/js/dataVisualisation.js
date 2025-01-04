@@ -1,10 +1,15 @@
+// This file contains the functions to visualise the data from retrievData.js using Chart.js
+// There are calculations being made so the data can be visualised in a clear way
+
 "use strict";
 
+// The data is being imported
 import { fetchData } from "./retrieveData.js";
 
 const labels = [];
 const calorieData = [];
 
+// This function is being used to calculate the total amount of calories per day
 async function caloriesPerDay() {
 	const data = await fetchData();
 	if (!data) {
@@ -14,7 +19,9 @@ async function caloriesPerDay() {
 
 	const dailyCalories = {};
 
+    // There is an iteration over each row
 	data.forEach(function (row) {
+        // The datumTijd property is being converted into a Date object
 		const date = new Date(row.datumTijd);
 		const formattedDate = date.toLocaleDateString();
 
@@ -22,6 +29,7 @@ async function caloriesPerDay() {
 			dailyCalories[formattedDate] = 0;
 		}
 
+        // The total amount of calories is being calculated for each day
 		dailyCalories[formattedDate] += row.calorieën;
 	});
 
@@ -33,6 +41,7 @@ async function caloriesPerDay() {
 	generateCaloriesChart(labels, calorieData);
 }
 
+// This function is being used to calculate the totals from the nutritional values
 async function totalNutritions() {
 	const data = await fetchData();
 	if (!data) {
@@ -40,6 +49,7 @@ async function totalNutritions() {
 		return;
 	}
 
+    // These are variables to store the total amounts of the nutrients
 	let totaalEiwitten = 0;
 	let totaalKoolhydraten = 0;
 	let totaalVetten = 0;
@@ -51,6 +61,7 @@ async function totalNutritions() {
 	let totaalD3 = 0;
 	let totaalOmega3 = 0;
 
+    // There is an iteration over each row and the calculations for the total of each nutrient are being made
 	data.forEach(function (row) {
 		totaalEiwitten += row.proteïne;
 		totaalKoolhydraten += row.koolhydraten;
@@ -71,6 +82,7 @@ async function totalNutritions() {
 	generatePieChart(nutrientLabels, nutrientData);
 }
 
+// This function is being used to make the 'Calories per day' bar chart
 function generateCaloriesChart(labels, calorieData) {
 	const ctx = document.getElementById("myChart");
 
@@ -96,6 +108,7 @@ function generateCaloriesChart(labels, calorieData) {
 	});
 }
 
+// This function is being used to make the 'Total nutritional values' pie chart
 function generatePieChart(labels, data) {
 	const ctx = document.getElementById("myPieChart");
 
