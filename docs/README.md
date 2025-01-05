@@ -105,6 +105,7 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
   CREDITS.md: the authors that contributed and the tools that were used in this project
   PROGRESS.md: a day by day documentation of what I have worked on
   CHANGELOG.md: documentation of the changes and updates
+  STARTUP.md: steps on how to use the application
 
 ## Data flow
 
