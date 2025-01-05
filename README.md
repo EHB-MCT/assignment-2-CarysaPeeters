@@ -89,6 +89,7 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
   dataVisualisationPie.js: visualises the total amount of nutrients I ate in the whole period I collected the data, it fetches the data from retrieveData.js and generates a pie chart using [Chart.js](https://www.chartjs.org/docs/latest/charts/doughnut.html)
   dataVisualisationLine.js: compares the recommended daily nutritional intake and my daily average nutritional intake, it fetches the data from retrieveData.js and generates a line chart using [Chart.js](https://www.chartjs.org/docs/latest/charts/line.html)
   dataVisualisationStackedBar.js: calculates the average of the nutrients per meal type, it fetches the data from retrieveData.js and generates a stacked bar chart using [Chart.js](https://www.chartjs.org/docs/latest/getting-started/)
+  dataVisualisationDonut.js: visualises the top 5 of my most consumed meals and drinks, it fetches the data from retrieveData.js and generates a donut chart using [Chart.js](https://www.chartjs.org/docs/latest/charts/doughnut.html)
 
 - Pages
   dataVisualisation.html: this page is used for visualizing the nutritional data fetched from Supabase, the data is retrieved using retrieveData.js
@@ -146,3 +147,4 @@ Source: (https://chatgpt.com/share/6744dcc4-4c44-8010-84f6-85e65cafef60)
 - [Chatgpt.com](https://chatgpt.com/share/67797d6c-f1d4-8010-8aac-91d2eb430d17) used for the recommended daily nutrition intake for the line chart
 - [Chatgpt.com](https://chatgpt.com/share/67799d6a-bb18-8010-997a-02d48fbaf769) used for the 'calculateAverageNutritions' function in dataVisualisationLine.js
 - [Chatgpt.com](https://chatgpt.com/share/677a9bfa-b59c-8010-a668-1ad5353dcb49) used for the average nutrients per mealtype for the stacked bar chart
+- [Chatgpt.com](https://chatgpt.com/share/677aaa23-8d3c-8010-9e82-1ac7632cb223) used for making the top 5 of my most consumed meals and drinks in dataVisualisationDonut.js
