@@ -139,7 +139,8 @@ Source: (https://chatgpt.com/share/6744dcc4-4c44-8010-84f6-85e65cafef60)
 - [Chart.js](https://www.chartjs.org/docs/latest/charts/line.html) used for making the line chart
 - [Chatgpt.com](https://chatgpt.com/share/6741a7fa-1f38-8010-a0ba-f386f460149f) used for the file structure and information about nutritional food
 - [Chatgpt.com](https://chatgpt.com/share/6743175e-713c-8010-8a5b-bdff87f0bfce) used for making the connection between the frontend and the database
-- [Chatgpt.com](https://chatgpt.com/share/6744c548-3ee0-8010-9704-3938b6790304) used for the css
+- [Chatgpt.com](https://chatgpt.com/share/6744c548-3ee0-8010-9704-3938b6790304) used for the css of the form
+- [Chatgpt.com](https://chatgpt.com/share/677ac16a-3ba8-8010-9af1-2c7086557e49) used for the css of the charts
 - [Chatgpt.com](https://chatgpt.com/share/6744dcc4-4c44-8010-84f6-85e65cafef60) used for the Data Attribution in the README
 - [Chatgpt.com](https://chatgpt.com/share/6773d756-89dc-8010-bd9f-96c05c52380d) used for the data retrieval in retrieveData.js
 - [Chatgpt.com](https://chatgpt.com/share/67794a38-ad10-8010-9356-d5f467ac5e41) used for making the total of calories/day in dataVisualisationBar.js
