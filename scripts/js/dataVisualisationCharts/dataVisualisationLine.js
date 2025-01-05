@@ -5,7 +5,7 @@
 "use strict";
 
 // The data is being imported
-import { fetchData } from "./retrieveData.js";
+import { fetchData } from "../retrieveData.js";
 
 // This function is being used to calculate the average daily amounts of the nutrients
 async function calculateAverageNutritions() {
