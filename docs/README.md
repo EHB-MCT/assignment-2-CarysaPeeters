@@ -7,9 +7,10 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
 ## What info?
 
 For each meal I eat, I fill in the following information:
+
 - Meal type: breakfast, lunch, dinner, snack or drink
 - Date and time of consumption
-- Meal (ex. vol au vent) 
+- Meal (ex. vol au vent)
 - Ingredients (ex. milk, eggs, ...)
 - Amount of calories
 - Amount of protein
@@ -125,7 +126,7 @@ For each meal I eat, I fill in the following information:
 - docs
   [CODE_OF_CONDUCT.md](https://www.contributor-covenant.org/version/1/4/code-of-conduct/): rules you should follow when working with this project
   LICENSE: the license of this project
-  README.md: information, conventions, files breakdown, data flow, data attribution and sources 
+  README.md: information, conventions, files breakdown, data flow, data attribution and sources
   CONTRIBUTING.md: guidelines for when someone wants to contribute
   CREDITS.md: the authors that contributed and the tools that were used in this project
   PROGRESS.md: a day by day documentation of what I have worked on
@@ -149,9 +150,9 @@ For each meal I eat, I fill in the following information:
 
 ## Data collection
 
-  I gave [Chatgpt](https://chatgpt.com/share/677afc64-2d20-8010-943a-69394d8e004a) the meals I was eating and when I could I gave him additional information about the ingredients (ex. brand)
-  I then asked him to give me the nutrients that I needed from that meal
-  When he gave me numbers with a comma, I made them into integers (ex. 1,5 or higher -> 2, lower than 1,5 -> 1)
+I gave [Chatgpt](https://chatgpt.com/share/677afc64-2d20-8010-943a-69394d8e004a) the meals I was eating and when I could I gave him additional information about the ingredients (ex. brand)
+I then asked him to give me the nutrients that I needed from that meal
+When he gave me numbers with a comma, I made them into integers (ex. 1,5 or higher -> 2, lower than 1,5 -> 1)
 
 ## Data attribution
 

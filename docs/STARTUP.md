@@ -23,6 +23,6 @@ Now you can add your nutritional values from your meal (only use integers)
 
 Press on the button 'Go to the results!' or go to 'dataVisualisation.html' and press again on 'Go Live' in the right corner, so you can view your results in the charts
 
-## Step 5 
+## Step 5
 
 Edit the conclusions in dataVisualisation.html

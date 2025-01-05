@@ -17,6 +17,7 @@ Before you begin, please check the README file for an overview of the project an
 ## Setting up the environment
 
 This project is simple to set up and requires no additional libraries, frameworks or tools.
+
 - Clone this repository to your local environment
 - Connect it to your own database (the project uses Supabase)
 
@@ -25,7 +26,7 @@ This project is simple to set up and requires no additional libraries, framework
 - Bug Fixes
   Help identify and fix issues in the code
 
-- Feature Enhancements 
+- Feature Enhancements
   Suggest and implement new features that align with the project’s goals
 
 - Code Improvements
