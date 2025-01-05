@@ -1,5 +1,6 @@
-// This file contains the functions to visualise the data from retrievData.js using Chart.js
-// There are calculations being made so the data can be visualised in a clear way
+// This file contains the functions to calculate the average of the daily nutrients I ate by using the data from retrievData.js
+// The average of my daily nutrients are being compared to the recommended daily nutrients I should eat
+// Chart.js is being used to create a line chart
 
 "use strict";
 
