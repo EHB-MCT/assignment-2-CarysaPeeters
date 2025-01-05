@@ -51,7 +51,7 @@ function generateCaloriesChart(labels, calorieData) {
 			labels: labels,
 			datasets: [
 				{
-					label: "Aantal calorieën per dag",
+					label: "Aantal calorieën (kcal) per dag",
 					data: calorieData,
 					borderWidth: 1,
 				},
