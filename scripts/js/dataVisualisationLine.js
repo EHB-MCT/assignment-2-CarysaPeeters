@@ -118,6 +118,8 @@ function generateLineChart(averageNutritions) {
 				{
 					label: "Aanbevolen dagelijkse inname",
 					data: [2076, 103, 286, 58, 30, 15, 7, 1000, 2, 15, 1],
+					backgroundColor: "rgba(54, 162, 235, 0.2)",
+					borderColor: "rgba(54, 162, 235, 1)",
 					borderWidth: 1,
 				},
 				{
@@ -135,6 +137,8 @@ function generateLineChart(averageNutritions) {
 						averageNutritions.d3,
 						averageNutritions.omega3,
 					],
+					backgroundColor: "rgba(255, 99, 132, 0.2)",
+					borderColor: "rgba(255, 99, 132, 1)",
 					borderWidth: 1,
 				},
 			],
