@@ -15,5 +15,5 @@ export async function fetchData() {
 	}
 
 	console.log("Fetched data:", data);
-    return data;
+	return data;
 }
