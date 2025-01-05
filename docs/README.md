@@ -1,6 +1,27 @@
 # Nutritional food
 
+## Intro
+
 I am a vegetarian and with this it is common to have some nutritional deficiencies. Therefore I thought it would be interesting to make a simple html form where, every time I eat or drink something, I have to answer some questions. This will allow me to see at the end if I am eating enough nutritious food or if I have some deficiencies.
+
+## What info?
+
+For each meal I eat, I fill in the following information:
+- Meal type: breakfast, lunch, dinner, snack or drink
+- Date and time of consumption
+- Meal (ex. vol au vent) 
+- Ingredients (ex. milk, eggs, ...)
+- Amount of calories
+- Amount of protein
+- Amount of carbs
+- Amount of fat
+- Amount of fiber
+- Amount of iron
+- Amount of zinc
+- Amount of calcium
+- Amount of B12 vitamines
+- Amount of D12 vitamines
+- Amount of omega-3 vitamines
 
 ## Conventions
 
@@ -67,6 +88,10 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
   formatted in the conventional method
   Source: (https://www.conventionalcommits.org/en/v1.0.0/), (https://medium.com/@noriller/docs-conventional-commits-feat-fix-refactor-which-is-which-531614fcb65a)
 
+- Gitflow workflow
+  feature branch (ex. feature/dataVisualisation) -> develop -> release -> main + develop
+  Source: (https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+
 ## Files breakdown
 
 - Assets
@@ -122,6 +147,12 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
 - Data visualisation
   The data that's been fetched in retrieveData.js is being used to create clear charts with [Chart.js](https://www.chartjs.org/docs/latest/getting-started/) in the dataVisualisation.js files, these charts are being rendered in dataVisualisation.html
 
+## Data collection
+
+  I gave [Chatgpt](https://chatgpt.com/share/677afc64-2d20-8010-943a-69394d8e004a) the meals I was eating and when I could I gave him additional information about the ingredients (ex. brand)
+  I then asked him to give me the nutrients that I needed from that meal
+  When he gave me numbers with a comma, I made them into integers (ex. 1,5 or higher -> 2, lower than 1,5 -> 1)
+
 ## Data attribution
 
 This project uses [Supabase](https://supabase.com/) to store and manage nutritional data entered through the application. Supabase provides a backend-as-a-service platform built on PostgreSQL, enabling fast and secure data management for web applications.
@@ -138,6 +169,7 @@ Source: (https://chatgpt.com/share/6744dcc4-4c44-8010-84f6-85e65cafef60)
 - [Conventions](https://standardjs.com/rules.html)
 - [Conventions](https://pimcore.com/docs/platform/Portal_Engine/Development_Documentation/Customize_Appearance/Frontend_Architecture/)
 - [Conventions](https://medium.com/@noriller/docs-conventional-commits-feat-fix-refactor-which-is-which-531614fcb65a)
+- [Conventions](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 - [HTML](https://www.w3schools.com/tags/tag_select.asp)
 - [HTML](https://www.w3schools.com/tags/att_input_type_datetime-local.asp)
 - [HTML](https://www.w3schools.com/tags/tag_input.asp)
@@ -160,3 +192,4 @@ Source: (https://chatgpt.com/share/6744dcc4-4c44-8010-84f6-85e65cafef60)
 - [Chatgpt.com](https://chatgpt.com/share/67799d6a-bb18-8010-997a-02d48fbaf769) used for the 'calculateAverageNutritions' function in dataVisualisationLine.js
 - [Chatgpt.com](https://chatgpt.com/share/677a9bfa-b59c-8010-a668-1ad5353dcb49) used for the average nutrients per mealtype for the stacked bar chart
 - [Chatgpt.com](https://chatgpt.com/share/677aaa23-8d3c-8010-9e82-1ac7632cb223) used for making the top 5 of my most consumed meals and drinks in dataVisualisationDonut.js
+- [Chatgpt.com](https://chatgpt.com/share/677afc64-2d20-8010-943a-69394d8e004a) for calculating the nutrients of the meals I ate
