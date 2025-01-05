@@ -85,7 +85,9 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
   supabaseClient.js: handles the initialization and configuration of the connection to Supabase
   formValidation.js: manages form submission and data validation, it processes user input, converts it into a structured format and interacts with Supabase to store the data
   retrieveData.js: fetches nutritional data from the Supabase database (from the "Voedingswaarden" table)
-  dataVisualisation.js: visualises the nutritional data in charts, it fetches the data from retrieveData.js and generates a chart using [Chart.js](https://www.chartjs.org/docs/latest/getting-started/)
+  dataVisualisationBar.js: visualises the calories per day, it fetches the data from retrieveData.js and generates a bar chart using [Chart.js](https://www.chartjs.org/docs/latest/getting-started/)
+  dataVisualisationPie.js: visualises the total amount of nutrients I ate in the whole period I collected the data, it fetches the data from retrieveData.js and generates a pie chart using [Chart.js](https://www.chartjs.org/docs/latest/charts/doughnut.html)
+  dataVisualisationLine.js: compares the recommended daily nutritional intake and my daily average nutritional intake, it fetches the data from retrieveData.js and generates a line chart using [Chart.js](https://www.chartjs.org/docs/latest/charts/line.html)
 
 - Pages
   dataVisualisation.html: this page is used for visualizing the nutritional data fetched from Supabase, the data is retrieved using retrieveData.js
@@ -106,7 +108,7 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
 - Data retrieval
   The retrieveData.js script fetches the data from the 'Voedingswaarden' table in the Supabase database, the data is logged to the console
 - Data visualisation
-  The data that's been fetched in retrieveData.js is being used to create clear charts with [Chart.js](https://www.chartjs.org/docs/latest/getting-started/) in dataVisualisation.js, these charts are being rendered in dataVisualisation.html
+  The data that's been fetched in retrieveData.js is being used to create clear charts with [Chart.js](https://www.chartjs.org/docs/latest/getting-started/) in the dataVisualisation.js files, these charts are being rendered in dataVisualisation.html
 
 ## Data attribution
 
