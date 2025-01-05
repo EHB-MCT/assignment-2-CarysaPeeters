@@ -102,6 +102,7 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
   LICENSE: the license of this project
   README.md: information, conventions, files breakdown, data flow, data attribution and sources 
   CONTRIBUTING.md: guidelines for when someone wants to contribute
+  CREDITS.md: the authors that contributed and the tools that were used in this project
 
 ## Data flow
 
