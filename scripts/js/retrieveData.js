@@ -6,7 +6,7 @@
 
 import { supabase } from "./supabaseClient.js";
 
-async function fetchData() {
+export async function fetchData() {
 	const { data, error } = await supabase.from("Voedingswaarden").select("*");
 
 	if (error) {
@@ -15,6 +15,5 @@ async function fetchData() {
 	}
 
 	console.log("Fetched data:", data);
+    return data;
 }
-
-fetchData();
