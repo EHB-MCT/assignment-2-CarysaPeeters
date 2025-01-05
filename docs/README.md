@@ -97,6 +97,11 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
 - index.html
   this page contains the form where users fill in the information about a meal
 
+- docs
+  [CODE_OF_CONDUCT.md](https://www.contributor-covenant.org/version/1/4/code-of-conduct/): rules you should follow when working with this project
+  LICENSE: the license of this project
+  README.md: information, conventions, files breakdown, data flow, data attribution and sources 
+
 ## Data flow
 
 - Data entry
@@ -137,6 +142,7 @@ Source: (https://chatgpt.com/share/6744dcc4-4c44-8010-84f6-85e65cafef60)
 - [Chart.js](https://www.chartjs.org/docs/latest/getting-started/) used for making the charts
 - [Chart.js](https://www.chartjs.org/docs/latest/charts/doughnut.html) used for making the pie chart
 - [Chart.js](https://www.chartjs.org/docs/latest/charts/line.html) used for making the line chart
+- [CODE_OF_CONDUCT](https://www.contributor-covenant.org/version/1/4/code-of-conduct/)
 - [Chatgpt.com](https://chatgpt.com/share/6741a7fa-1f38-8010-a0ba-f386f460149f) used for the file structure and information about nutritional food
 - [Chatgpt.com](https://chatgpt.com/share/6743175e-713c-8010-8a5b-bdff87f0bfce) used for making the connection between the frontend and the database
 - [Chatgpt.com](https://chatgpt.com/share/6744c548-3ee0-8010-9704-3938b6790304) used for the css of the form
