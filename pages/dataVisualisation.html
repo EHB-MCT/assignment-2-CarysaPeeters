@@ -10,6 +10,33 @@
 		<link rel="stylesheet" href="/css/index.css" />
 		<script type="module" src="/scripts/js/supabaseClient.js" defer></script>
 		<script type="module" src="/scripts/js/retrieveData.js" defer></script>
+		<script type="module" src="/scripts/js/dataVisualisationBar.js" defer></script>
+		<script type="module" src="/scripts/js/dataVisualisationPie.js" defer></script>
+		<script type="module" src="/scripts/js/dataVisualisationLine.js" defer></script>
+		<script type="module" src="/scripts/js/dataVisualisationStackedBar.js" defer></script>
+		<script type="module" src="/scripts/js/dataVisualisationDonut.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	</head>
-	<body></body>
+	<body>
+		<div>
+			<h1>Calorieën per dag</h1>
+			<canvas id="myChart"></canvas>
+		</div>
+		<div>
+			<h1>Totaal voedingsstoffen</h1>
+			<canvas id="myPieChart" width="400" height="400"></canvas>
+		</div>
+		<div>
+			<h1>Aanbevolen dagelijkse inname VS Gemiddelde dagelijkse inname</h1>
+			<canvas id="myLineChart" width="400" height="400"></canvas>
+		</div>
+		<div>
+			<h1>Gemiddelde voedingswaarden per maaltijdtype</h1>
+			<canvas id="myStackedBar" width="400" height="400"></canvas>
+		</div>
+		<div>
+			<h1>Top 5 consumptie</h1>
+			<canvas id="myDonutChart" width="400" height="400"></canvas>
+		</div>
+	</body>
 </html>
