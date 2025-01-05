@@ -1,48 +1,50 @@
 /* mediaqueries */
 
 @media (max-width: 600px) {
-    form {
-        padding: 15px;
-    }
+	form {
+		padding: 15px;
+	}
 
-    label {
-        font-size: 0.9rem;
-    }
+	label {
+		font-size: 0.9rem;
+	}
 
-    input, select, button {
-        width: 100%;
-    }
+	input,
+	select,
+	button {
+		width: 100%;
+	}
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 1.5rem;
-    }
+	h1 {
+		font-size: 1.5rem;
+	}
 
-    p {
-        font-size: 0.9rem;
-    }
+	p {
+		font-size: 0.9rem;
+	}
 
-    div {
-        width: 90%;
-    }
+	div {
+		width: 90%;
+	}
 
-    canvas {
-        width: 100% !important;
-        height: auto !important;
-    }
+	canvas {
+		width: 100% !important;
+		height: auto !important;
+	}
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 1.4rem;
-    }
+	h1 {
+		font-size: 1.4rem;
+	}
 
-    p {
-        font-size: 0.85rem;
-    }
+	p {
+		font-size: 0.85rem;
+	}
 
-    div {
-        width: 100%;
-    }
+	div {
+		width: 100%;
+	}
 }
