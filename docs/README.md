@@ -101,6 +101,7 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
   [CODE_OF_CONDUCT.md](https://www.contributor-covenant.org/version/1/4/code-of-conduct/): rules you should follow when working with this project
   LICENSE: the license of this project
   README.md: information, conventions, files breakdown, data flow, data attribution and sources 
+  CONTRIBUTING.md: guidelines for when someone wants to contribute
 
 ## Data flow
 
