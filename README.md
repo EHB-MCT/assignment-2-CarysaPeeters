@@ -88,6 +88,7 @@ I am a vegetarian and with this it is common to have some nutritional deficienci
   dataVisualisationBar.js: visualises the calories per day, it fetches the data from retrieveData.js and generates a bar chart using [Chart.js](https://www.chartjs.org/docs/latest/getting-started/)
   dataVisualisationPie.js: visualises the total amount of nutrients I ate in the whole period I collected the data, it fetches the data from retrieveData.js and generates a pie chart using [Chart.js](https://www.chartjs.org/docs/latest/charts/doughnut.html)
   dataVisualisationLine.js: compares the recommended daily nutritional intake and my daily average nutritional intake, it fetches the data from retrieveData.js and generates a line chart using [Chart.js](https://www.chartjs.org/docs/latest/charts/line.html)
+  dataVisualisationStackedBar.js: calculates the average of the nutrients per meal type, it fetches the data from retrieveData.js and generates a stacked bar chart using [Chart.js](https://www.chartjs.org/docs/latest/getting-started/)
 
 - Pages
   dataVisualisation.html: this page is used for visualizing the nutritional data fetched from Supabase, the data is retrieved using retrieveData.js
@@ -140,7 +141,8 @@ Source: (https://chatgpt.com/share/6744dcc4-4c44-8010-84f6-85e65cafef60)
 - [Chatgpt.com](https://chatgpt.com/share/6744c548-3ee0-8010-9704-3938b6790304) used for the css
 - [Chatgpt.com](https://chatgpt.com/share/6744dcc4-4c44-8010-84f6-85e65cafef60) used for the Data Attribution in the README
 - [Chatgpt.com](https://chatgpt.com/share/6773d756-89dc-8010-bd9f-96c05c52380d) used for the data retrieval in retrieveData.js
-- [Chatgpt.com](https://chatgpt.com/share/67794a38-ad10-8010-9356-d5f467ac5e41) used for making the total of calories/day in dataVisualisation.js
+- [Chatgpt.com](https://chatgpt.com/share/67794a38-ad10-8010-9356-d5f467ac5e41) used for making the total of calories/day in dataVisualisationBar.js
 - [Chatgpt.com](https://chatgpt.com/share/67795480-9040-8010-9ac0-abf4420e0f85) used for making the 'Totaal voedingsstoffen' pie chart
 - [Chatgpt.com](https://chatgpt.com/share/67797d6c-f1d4-8010-8aac-91d2eb430d17) used for the recommended daily nutrition intake for the line chart
-- [Chatgpt.com](https://chatgpt.com/share/67799d6a-bb18-8010-997a-02d48fbaf769) used for the 'calculateAverageNutritions' function in dataVisualisation.js
+- [Chatgpt.com](https://chatgpt.com/share/67799d6a-bb18-8010-997a-02d48fbaf769) used for the 'calculateAverageNutritions' function in dataVisualisationLine.js
+- [Chatgpt.com](https://chatgpt.com/share/677a9bfa-b59c-8010-a668-1ad5353dcb49) used for the average nutrients per mealtype for the stacked bar chart

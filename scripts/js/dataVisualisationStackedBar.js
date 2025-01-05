@@ -1,7 +1,12 @@
+// This file contains the functions to calculate the average of all the nutrients per meal type, by using the data from retrievData.js
+// Chart.js is being used to create a stacked bar chart
+
 "use strict";
 
+// The data is being imported
 import { fetchData } from "./retrieveData.js";
 
+// This function is being used to calculate the the average of all the nutrients per meal type
 async function calculateAverageNutritionsPerMealType() {
     const data = await fetchData();
     if (!data) {
@@ -9,6 +14,7 @@ async function calculateAverageNutritionsPerMealType() {
         return;
     }
 
+    // An object to store the total amounts of nutrients per meal type
     const mealTypeNutritions = {
         ontbijt: { calorieën: 0, eiwitten: 0, koolhydraten: 0, vetten: 0, vezels: 0, ijzer: 0, zink: 0, calcium: 0, b12: 0, d3: 0, omega3: 0, count: 0 },
         lunch: { calorieën: 0, eiwitten: 0, koolhydraten: 0, vetten: 0, vezels: 0, ijzer: 0, zink: 0, calcium: 0, b12: 0, d3: 0, omega3: 0, count: 0 },
@@ -17,7 +23,9 @@ async function calculateAverageNutritionsPerMealType() {
         drank: { calorieën: 0, eiwitten: 0, koolhydraten: 0, vetten: 0, vezels: 0, ijzer: 0, zink: 0, calcium: 0, b12: 0, d3: 0, omega3: 0, count: 0 },
     };
 
+    // There is an iteration over each row
     data.forEach(function (row) {
+        // The nutrient values from the current row are being added to the corresponding meal type
         const mealType = row.maaltijdtype;
         if (mealTypeNutritions[mealType]) {
             mealTypeNutritions[mealType].calorieën += row.calorieën;
@@ -37,6 +45,7 @@ async function calculateAverageNutritionsPerMealType() {
 
     const averageNutritionsPerMealType = {};
 
+    // There is an iteration over each meal type and the average for each nutrient is being calculated
     for (const mealType in mealTypeNutritions) {
         const nutrients = mealTypeNutritions[mealType];
         const count = nutrients.count;
